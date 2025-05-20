@@ -26,11 +26,11 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#FFD700", // AACUF yellow
+          DEFAULT: "#6B21A8", // AACUF yellow
           foreground: "#000000",
         },
         secondary: {
-          DEFAULT: "#6B21A8", // AACUF purple
+          DEFAULT: "#FFD700", // AACUF purple
           foreground: "#ffffff",
         },
         destructive: {

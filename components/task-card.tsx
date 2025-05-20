@@ -127,9 +127,9 @@ export function TaskCard({ task, user }: { task: Task; user?: User }) {
         <CardFooter className="flex justify-between border-t pt-4 bg-gray-50 dark:bg-gray-800">
           <div className="text-sm">
             {task.responsible ? (
-              <span>Responsável: {task.responsible}</span>
+              <span>Responsável: <span className="inline-block px-2 py-1 text-sm font-semibold text-gray-700 bg-gray-200 rounded-md">{task.responsible}</span></span>
             ) : (
-              <span className="text-amber-600 dark:text-amber-400">Sem responsável</span>
+              <span className="text-red-600 dark:text-red-500">Sem responsável</span>
             )}
           </div>
           <div className="flex gap-2">

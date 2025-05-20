@@ -12,11 +12,10 @@ type User = {
 export async function AllTasksList({ user }: { user?: User }) {
   const tasks = await getTasks()
 
-  // Ordena as tarefas por data, com as mais recentes no topo
   const sortedTasks = tasks.sort((a, b) => {
     const dateA = new Date(a.dueDate).getTime()
     const dateB = new Date(b.dueDate).getTime()
-    return dateB - dateA  // Ordem decrescente
+    return dateA - dateB  
   })
 
   return (
